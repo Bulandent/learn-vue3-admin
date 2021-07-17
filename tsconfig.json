@@ -5,14 +5,15 @@
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
+		"baseUrl": "./",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-		"paths": {
-      "/@/*": ["src/*"],
-      "/#/*": ["types/*"]
-    }
+		// "paths": {
+    //   "/@/*": ["src/*"],
+    //   "/#/*": ["types/*"],
+    // }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
