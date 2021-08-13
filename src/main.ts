@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { setupRouter } from '/@/router'
-
+import { router, setupRouter } from './routers'
+// import { setupAntd } from '/@/plugins/antd'
 
 const app = createApp(App)
-console.log('test');
+// setupAntd(app)
 setupRouter(app)
 
-app.mount('#app')
+router.isReady().then(() => app.mount('#app'))
